@@ -60,13 +60,11 @@ Here are some screenshots of the app<br/>
 <img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.25.53.jpeg" width="350" height="700"/><br/>
 #### Home Screen
 <img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.26.10.jpeg" width="350" height="700"/><br/>
-#### Filter Categories on clicking filter icon
-<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.27.15.jpeg" width="350" height="700"/><br/>
 #### College Filter
 <img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.27.55.jpeg" width="350" height="700"/><br/>
 #### College Filter Result
-<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.28.07.jpeg" width="350" height="700"/><br/>
+<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2019.43.07.jpeg" width="350" height="700"/><br/>
 #### Frequency Filter
-<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.28.29.jpeg" width="350" height="700"/><br/>
+<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2019.43.08.jpeg" width="350" height="700"/><br/>
 #### Frequency Filter Result
-<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2018.29.11.jpeg" width="350" height="700"/><br/>
+<img src="https://github.com/saurabh-000/Demux/blob/main/screenshots/WhatsApp%20Image%202020-11-23%20at%2019.43.08(1).jpeg" width="350" height="700"/><br/>
