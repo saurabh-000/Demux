@@ -1,20 +1,21 @@
-package com.symb.task.demux
+package com.symb.task.demux.Adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.symb.task.demux.DataModel.Category
+import com.symb.task.demux.R
 import kotlinx.android.synthetic.main.category_container.view.*
-class CategoryAdapter(private val context: Context,private val dataset:ArrayList<Category>,private val questionAdapter: QuestionAdapter): RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryAdapter(private val context: Context, private val dataset:ArrayList<Category>, private val questionAdapter: QuestionAdapter): RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
     class ViewHolder(view: View):RecyclerView.ViewHolder(view){
         val btn_category=view.menu_button
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v= LayoutInflater.from(parent.context).inflate(R.layout.category_container,parent,false)
-        return CategoryAdapter.ViewHolder(v)
+        return ViewHolder(v)
     }
     override fun getItemCount(): Int {
         return dataset.size

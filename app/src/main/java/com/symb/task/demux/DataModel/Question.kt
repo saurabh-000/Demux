@@ -1,4 +1,4 @@
-package com.symb.task.demux
+package com.symb.task.demux.DataModel
 
 import org.json.JSONArray
 

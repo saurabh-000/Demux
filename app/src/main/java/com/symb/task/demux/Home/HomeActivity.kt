@@ -1,10 +1,15 @@
-package com.symb.task.demux
+package com.symb.task.demux.Home
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.symb.task.demux.Adapter.CategoryAdapter
+import com.symb.task.demux.Adapter.QuestionAdapter
+import com.symb.task.demux.DataModel.Category
+import com.symb.task.demux.DataModel.Question
+import com.symb.task.demux.R
 import kotlinx.android.synthetic.main.activity_home.*
 import org.json.JSONArray
 import java.io.IOException
@@ -17,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var categoryLayoutManager: RecyclerView.LayoutManager
     private var categoryDataset=ArrayList<Category>()
     private var categoryRecyclerviewVisibilityFlag=false
-    private lateinit var questionAdapter:QuestionAdapter
+    private lateinit var questionAdapter: QuestionAdapter
     private var isLoading=false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +30,8 @@ class HomeActivity : AppCompatActivity() {
         PrepareCategoryDataset()
         populateQuestionData()
         questionLayoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        questionAdapter = QuestionAdapter(questionDataset)
+        questionAdapter =
+            QuestionAdapter(questionDataset)
         questionRecyclerView = findViewById<RecyclerView>(R.id.question_recycler_view).apply {
             setHasFixedSize(true)
             layoutManager = questionLayoutManager
@@ -33,7 +39,11 @@ class HomeActivity : AppCompatActivity() {
         }
         initScrollListener()
         categoryLayoutManager= LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-        categoryAdapter=CategoryAdapter(this,categoryDataset,questionAdapter)
+        categoryAdapter= CategoryAdapter(
+            this,
+            categoryDataset,
+            questionAdapter
+        )
         categoryRecyclerView=findViewById<RecyclerView>(R.id.category_recycler_view).apply {
             setHasFixedSize(true)
             layoutManager=categoryLayoutManager
@@ -103,7 +113,8 @@ class HomeActivity : AppCompatActivity() {
             for(names in itemobj.keys())
             {
                 var items=itemobj.getJSONArray(names)
-                var category=Category(names,items)
+                var category=
+                    Category(names, items)
                 categoryDataset.add(category)
             }
         }
@@ -127,8 +138,10 @@ class HomeActivity : AppCompatActivity() {
             var resId=resources.getIdentifier(image,"drawable",packageName)
             var interview_type=itemobj.getString("interview type")
             var job_nature=itemobj.getString("job_nature")
-            var question=Question(resId,company,college,
-                Integer.parseInt(frequency),title,description,tags,interview_type,job_nature)
+            var question= Question(
+                resId, company, college,
+                Integer.parseInt(frequency), title, description, tags, interview_type, job_nature
+            )
             questionDataset.add(question)
         }
 

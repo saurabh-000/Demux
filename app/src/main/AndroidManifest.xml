@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Question">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Home.HomeActivity"></activity>
+        <activity android:name=".Home.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
