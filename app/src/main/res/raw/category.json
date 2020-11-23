@@ -1,0 +1,10 @@
+[
+  {
+    "all": [],
+    "college": ["IIT Khadagpur","IIT Delhi","IIT Mumbai","IIT BHU","IIT Kanpur"],
+    "frequency": ["1","2","3","4","5"],
+    "company": ["Apple","Google","Facebook","Cisco","Twitter","Microsoft","Snapchat"],
+    "interview type": ["Online-test","Personal Interview"],
+    "job_nature": ["Internship","Placement"]
+  }
+]
